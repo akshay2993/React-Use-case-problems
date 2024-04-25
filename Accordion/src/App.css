@@ -70,16 +70,10 @@
   margin-bottom: 30px;
 }
 
-.yellow-fill {
-  color: #FFF770 !important;
+.active {
+  color: #FFF700;
 }
 
-.red {
-  color: red;
-}
-.orange {
-  color: orange;
-}
-.green {
-  color: green;
+.inactive {
+  color: white;
 }

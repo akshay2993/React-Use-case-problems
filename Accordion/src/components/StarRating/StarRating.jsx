@@ -5,27 +5,21 @@ const StarRating = ({ noOfStars }) => {
   const [rating, setRating] = useState(0)
   const[hover, setHover] = useState(0)
 
-  const handleMouseEnter = (index) => {
-    setHover(index)
-  }
-
-  const handleMouseLeave = () => {
-    setHover(0)
-  }
-
   return (
     <div className="star-rating">
       {[...Array(noOfStars)].map((_, index) => {
+        index +=1
+
         return <FaStar
           style={{
-            fontSize: '25px',
+            fontSize: '40px',
             marginRight: '10px',
             cursor: 'pointer'
           }}
-          className={`${index >= 3 ? index >= 7 ? 'orange' : 'green': 'red'} ${index <= rating || index <= hover ? 'yellow-fill' : null}`}
+          className={index <= (hover || rating) ? 'active' : 'inactive'}
           key={index}
-          onMouseEnter={() => {handleMouseEnter(index)}}
-          onMouseLeave={() => {handleMouseLeave}}
+          onMouseEnter={() => setHover(index)}
+          onMouseLeave={() => setHover(rating)}
         onClick={() => setRating(index)} />
       })}
     </div>
