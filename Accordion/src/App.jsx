@@ -1,14 +1,20 @@
-// import { useState } from 'react'
 import './App.css'
-import Accordion from './components/Accordion/Accordion'
+// import Accordion from './components/Accordion/Accordion'
+import RandomBgColor from './components/RandomBgColor/RandomBgColor'
+import StarRating from './components/StarRating/StarRating'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* Accordion */}
-      <Accordion />
+      {/* Accordion 
+      <Accordion /> */}
+
+      {/* Random Background Color */}
+      {/** <RandomBgColor /> */}
+
+      {/** Star Rating */}
+      <StarRating noOfStars={10} />
     </>
   )
 }

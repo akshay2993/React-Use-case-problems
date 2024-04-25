@@ -69,3 +69,17 @@
 .wrapper button {
   margin-bottom: 30px;
 }
+
+.yellow-fill {
+  color: #FFF770 !important;
+}
+
+.red {
+  color: red;
+}
+.orange {
+  color: orange;
+}
+.green {
+  color: green;
+}

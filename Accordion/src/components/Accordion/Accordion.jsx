@@ -21,7 +21,7 @@ const Accordion = () => {
 
     return (
         <div className='wrapper'>
-        <button onClick={() => {setMultipleSelectEnabled((prev) => !prev)}}>Enable multiple Select</button>
+        <button onClick={() => {setMultipleSelectEnabled((prev) => !prev)}}>{multipleSelectEnabled ? 'Disable multiple Select' : 'Enable multiple Select'}</button>
             { data && data.length > 0 ?
                  data.map((dataItem) => {
                 return (
