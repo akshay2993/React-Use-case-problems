@@ -1,5 +1,6 @@
 import './App.css'
-import ScrollIindicator from './components/ScrollIndicator'
+import ModalParent from './components/CustomModal'
+// import ScrollIindicator from './components/ScrollIndicator'
 // import QrCodeGen from './components/QrCodeGenerator/QrCodeGen'
 // import LightDarkMode from './components/ThemeSwitcher'
 // import TreeView from './components/TreeMenu'
@@ -38,9 +39,12 @@ function App() {
       {/** Light-dark mode Component 
       <LightDarkMode />*/} 
 
-      {/** Scroll Indicator Component */} 
-      <ScrollIindicator url={'https://dummyjson.com/products?limit=100'} />
-    </>
+      {/** Scroll Indicator Component  
+      <ScrollIindicator url={'https://dummyjson.com/products?limit=100'} /> */}
+    
+      {/** Custom Modal Component */} 
+      <ModalParent />
+      </>
   )
 }
 
