@@ -1,11 +1,14 @@
 import './App.css'
-import TreeView from './components/TreeMenu'
+import ScrollIindicator from './components/ScrollIndicator'
+// import QrCodeGen from './components/QrCodeGenerator/QrCodeGen'
+// import LightDarkMode from './components/ThemeSwitcher'
+// import TreeView from './components/TreeMenu'
 // import ImageSlider from './components/ImageSlider/ImageSlider'
 // import LoadMoreComponent from './components/LoadMoreFeature/LoadMoreComponent'
 // import Accordion from './components/Accordion/Accordion'
 // import RandomBgColor from './components/RandomBgColor/RandomBgColor'
 // import StarRating from './components/StarRating/StarRating'
-import { Menu } from './components/TreeMenu/data'
+// import { Menu } from './components/TreeMenu/data'
 
 function App() {
 
@@ -26,8 +29,17 @@ function App() {
       {/** Load More Component 
       <LoadMoreComponent />*/}
 
-      {/** Tree Menu Component */} 
-      <TreeView menu={Menu} />
+      {/** Tree Menu Component 
+      <TreeView menu={Menu} /> */} 
+
+      {/** QrCode generator Component  
+      <QrCodeGen /> */}
+
+      {/** Light-dark mode Component 
+      <LightDarkMode />*/} 
+
+      {/** Scroll Indicator Component */} 
+      <ScrollIindicator url={'https://dummyjson.com/products?limit=100'} />
     </>
   )
 }
