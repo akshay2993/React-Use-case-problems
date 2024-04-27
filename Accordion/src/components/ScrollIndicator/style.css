@@ -1,0 +1,23 @@
+#root {
+    padding: 0;
+}
+body {
+    color: white;
+}
+.scroll-indicator-wrapper {
+    width: 100vw;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    background: darkgreen;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.scoll-indicator {
+    display: block;
+    height: 10px;
+    /* width: 100%; */
+    background: purple;
+}
