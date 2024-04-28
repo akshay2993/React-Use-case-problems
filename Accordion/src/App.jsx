@@ -1,5 +1,6 @@
 import './App.css'
-import ModalParent from './components/CustomModal'
+import SearchAutocomplete from './components/SearchAutoComplete'
+// import ModalParent from './components/CustomModal'
 // import ScrollIindicator from './components/ScrollIndicator'
 // import QrCodeGen from './components/QrCodeGenerator/QrCodeGen'
 // import LightDarkMode from './components/ThemeSwitcher'
@@ -42,8 +43,11 @@ function App() {
       {/** Scroll Indicator Component  
       <ScrollIindicator url={'https://dummyjson.com/products?limit=100'} /> */}
     
-      {/** Custom Modal Component */} 
-      <ModalParent />
+      {/** Custom Modal Component 
+      <ModalParent /> */} 
+
+      {/** Search Autocomplete Component */} 
+      <SearchAutocomplete />
       </>
   )
 }

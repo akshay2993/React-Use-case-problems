@@ -1,0 +1,36 @@
+#root {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.name-input {
+    padding: 6px;
+    font-size: 17px;
+}
+
+ul {
+    list-style: none;
+    padding: 20px 0;
+    background: gray;
+    margin: 0;
+}
+ul li {
+    cursor: pointer;
+}
+
+.suggestions {
+    position: absolute;
+    width: 100%;
+    top: 37px;
+}
+
+.suggestions ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background: #80808047;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
