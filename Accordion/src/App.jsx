@@ -1,5 +1,6 @@
 import './App.css'
-import SearchAutocomplete from './components/SearchAutoComplete'
+// import SearchAutocomplete from './components/SearchAutoComplete'
+import TicTacToe from './components/TicTacToe/TicTacToe'
 // import ModalParent from './components/CustomModal'
 // import ScrollIindicator from './components/ScrollIndicator'
 // import QrCodeGen from './components/QrCodeGenerator/QrCodeGen'
@@ -46,8 +47,12 @@ function App() {
       {/** Custom Modal Component 
       <ModalParent /> */} 
 
-      {/** Search Autocomplete Component */} 
-      <SearchAutocomplete />
+      {/** Search Autocomplete Component  
+      <SearchAutocomplete /> */}
+
+      {/** Tic-Tac-Toe Component */}
+      <TicTacToe />
+      
       </>
   )
 }
