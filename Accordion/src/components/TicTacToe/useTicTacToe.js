@@ -19,12 +19,12 @@ const useTicTacToe = () => {
 
   function getCurrentStatus(board) {
     const winner = getWinner(board)
-    console.log(winner)
-    if(!winner ){
-      console.log('not winner')
-       return isXNext ? 'Next Player: X':'Next Player: O'
+    if(winner ) return `Player ${winner} wins!`
+    if(!board.includes(null)){
+      console.log('draw')
+      return "That's a Draw!"
     }
-    return `Player ${winner} wins!`
+    return isXNext ? 'Next Player: X':'Next Player: O'
   }
 
   function getWinner(currentBoard) {
